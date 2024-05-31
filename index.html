@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Maçı Skor Takip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Şampiyonlar Ligi Skor Takip</h1>
+    <div class="team" id="teamA">
+        <h2>Fenerbahçe</h2>
+        <p>Gol Sayısı: <span id="scoreA">0</span></p>
+        <button onclick="increaseScore('A')">Gol Ekle</button>
+        <button onclick="decreaseScore('A')">Gol Azalt</button>
+        <button onclick="setScore('A')">Gol Belirle</button>
+        <button onclick="resetScore('A')">Sıfırla</button>
+    </div>
+    <div class="team" id="teamB">
+        <h2>Galatasaray</h2>
+        <p>Gol Sayısı: <span id="scoreB">0</span></p>
+        <button onclick="increaseScore('B')">Gol Ekle</button>
+        <button onclick="decreaseScore('B')">Gol Azalt</button>
+        <button onclick="setScore('B')">Gol Belirle</button>
+        <button onclick="resetScore('B')">Sıfırla</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
