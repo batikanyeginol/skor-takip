@@ -29,3 +29,12 @@ function resetScore(team) {
     scores[team] = 0;
     document.getElementById(`score${team}`).textContent = scores[team];
 }
+
+function toggleMusic() {
+    const music = document.getElementById('background-music');
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}

@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <button id="music-control" onclick="toggleMusic()">Müziği Aç/Kapat</button>
+    </header>
     <h1>Şampiyonlar Ligi Skor Takip</h1>
     <div class="team" id="teamA">
-        <h2>Fenerbahçe</h2>
+        <h2>Takım A</h2>
         <p>Gol Sayısı: <span id="scoreA">0</span></p>
         <button onclick="increaseScore('A')">Gol Ekle</button>
         <button onclick="decreaseScore('A')">Gol Azalt</button>
@@ -17,13 +20,17 @@
         <button onclick="resetScore('A')">Sıfırla</button>
     </div>
     <div class="team" id="teamB">
-        <h2>Galatasaray</h2>
+        <h2>Takım B</h2>
         <p>Gol Sayısı: <span id="scoreB">0</span></p>
         <button onclick="increaseScore('B')">Gol Ekle</button>
         <button onclick="decreaseScore('B')">Gol Azalt</button>
         <button onclick="setScore('B')">Gol Belirle</button>
         <button onclick="resetScore('B')">Sıfırla</button>
     </div>
+    <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Tarayıcınız bu sesi desteklemiyor.
+    </audio>
     <script src="script.js"></script>
 </body>
 </html>

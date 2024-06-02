@@ -12,6 +12,27 @@ body {
     background-size: cover;
 }
 
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#music-control {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#music-control:hover {
+    background-color: #005bb5;
+}
+
 h1 {
     margin-bottom: 20px;
     font-size: 3em;
